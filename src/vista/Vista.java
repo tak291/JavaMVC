@@ -8,24 +8,30 @@ public class Vista {
 	
 	// Debo inicializar esta Vista?
 	public Vista() {
-
+		
 	}
 	
-	//La vista pediendo la opción del usuario si continuar o salir.
-	public int View() {
-		
-		int a;
-		System.out.println("Choose an option: \n"
-				+ "1. Continue \n"
-				+ "2. Stop.");
-		
-		a = scan.nextInt();
-		
+	//Vista que recibe la letra del apellido.
+	public char Apellido() {
+		System.out.println("Digite la primera letra de su apellido: ");
+		char a = scan.next().charAt(0);
 		return a;
 	}
 	
-	public void Edad(int x) {
-		System.out.println("Your age is: " + x);
+	public String Mes() {
+		String mes = "";
+		System.out.println("Digite el mes que nació: ");
+		scan.nextLine();
+		mes = scan.nextLine();
+		return mes;
 	}
+	
+	public int Tel() {
+		int tel;
+		System.out.println("Digite el último número de su celular: ");
+		tel = scan.nextInt();
+		return tel;
+	}
+		
 	
 }
