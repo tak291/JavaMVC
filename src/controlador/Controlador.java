@@ -42,6 +42,5 @@ public class Controlador {
 		
 		int tel = V.Tel();
 		System.out.println(tel);
-	}
-		
+	}		
 }
